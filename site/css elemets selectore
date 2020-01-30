@@ -1,0 +1,18 @@
+<!DOCTYPE html5>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Elements selectors</title>
+	<style>
+		h1 {
+			color: orange;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="highlight">MAIN HEADING</h1>
+
+	<p id="paragraph">Constraints are used to set the rules for all records in the table. If any constraints get violated then it can abort the action that caused it.
+	Constraints are defined while creating the database itself with CREATE TABLE statement or even after the table is created once with ALTER TABLE statement.</p>
+</body>
+</html>
