@@ -1,0 +1,61 @@
+<!DOCTYPE html5>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Elements selectors</title>
+	<style>
+		/*using class name for styling*/
+		.highlight {
+			color: orange;
+			background-color: grey;
+			text-align: center;
+		}
+		/*using ID tag styling*/
+		#paragraph{
+			color: blue;
+			font-style: italic;
+			text-align: center;
+		}
+		/*child notation*/
+		section > h2{
+			color: yellow;
+		}
+		/*not child of section*/
+		div{
+			color: red;/
+		}
+		/*checking id*/
+		#mainpoint{
+			color: violet;
+		}
+
+		/*Decendant selectors*/
+		article li{
+			color: lightgreen;
+		}
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<h1 class="highlight">MAIN HEADING h1</h1>
+
+	<p id="paragraph">Constraints are used to set the rules for all records in the table. If any constraints get violated then it can abort the action that caused it.
+	Constraints are defined while creating the database itself with CREATE TABLE statement or even after the table is created once with ALTER TABLE statement. P</p>
+	<section>
+		<h2>style apply krenge using child notation h2</h2>
+		<div> <h2>this is not the direct child of section</h2>
+			<span id="mainpoint"> this is mainpoint </span></div>
+	</section>
+	<article>
+		<li>
+			one
+		</li>
+		<li>two</li>
+		<li>three</li>
+	</article>
+</body>
+</html>
