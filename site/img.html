@@ -1,0 +1,54 @@
+<!DOCTYPE html5>
+<html>
+<head>
+	<style type="text/css">
+		
+		body{
+			background:url(background-photo.jpg) ;
+			background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+		}
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		h1{
+			background-color: yellow;
+			position: absolute;
+			font-size: x-large;
+			color: black;
+			right: 40%;	
+			top: 50%;
+		}
+
+		h1:hover{
+			color: blue;
+			background-color: red;
+			font-style: italic;
+			font-size: 200%;
+			
+		}
+
+	</style>
+	<meta charset="utf-8">
+	<title>image in background</title>
+</head>
+<body>
+	<h1> THIS IS MY FIRST COVER</h1>
+</body>
+</html>

@@ -30,11 +30,36 @@
 		}
 
 		/*Decendant selectors*/
-		article li{
-			color: lightgreen;
+		header a{
+			color: red;
 		}
 
+		header li{
+			list-style: none;
 
+		}
+		/* Pseudo selectors*/
+		{
+			text-decoration-style: none;
+
+		}
+
+		section>div{
+			color: pink;
+			font-size: 20px;
+		}
+
+		div:nth-child(odd){
+			font-size: 30px;
+			background-color: grey;
+		}
+
+		
+		body {
+			background-color: cyan;
+		}
+
+		
 
 
 
@@ -46,16 +71,23 @@
 	<p id="paragraph">Constraints are used to set the rules for all records in the table. If any constraints get violated then it can abort the action that caused it.
 	Constraints are defined while creating the database itself with CREATE TABLE statement or even after the table is created once with ALTER TABLE statement. P</p>
 	<section>
+		<div>div1</div>
+		<div>div2</div>
+		<div>div3</div>
+		<div>div4</div>
+		<div>div5</div>				
 		<h2>style apply krenge using child notation h2</h2>
 		<div> <h2>this is not the direct child of section</h2>
 			<span id="mainpoint"> this is mainpoint </span></div>
 	</section>
-	<article>
+	<header>
+		<li><a href="/"> one</a> </li>
+		<li><a href="/">two</a></li>
 		<li>
-			one
+			<a href="check.html" target="_blank" title="ordered list"> 
+			linking to the file in same directory
+			</a>
 		</li>
-		<li>two</li>
-		<li>three</li>
-	</article>
+	</header>
 </body>
 </html>
